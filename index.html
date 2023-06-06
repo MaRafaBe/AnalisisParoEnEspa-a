@@ -1,0 +1,121 @@
+<head>
+  <h1> Análisis del paro en España </h1>
+ <div style="margin-left:20px;" > 
+  <b> Autor: Manuel Rafael Bello Legua 
+  <br>
+  <br>
+  URL:  
+  <a href="https://js-wdavkn.stackblitz.io" target="_blank">
+  https://js-wdavkn.stackblitz.io
+  </a>
+  <br>
+  <br>
+    Fuentes de datos: 
+  <br>
+  <a href="https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=ultiDatos&idp=1254735976595" target="_blank">
+    Encuestas de población activa (INE)
+  </a>
+  <br>
+  <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=4335" target="_blank">
+    Horas de trabajo 
+    </a>
+  </b>
+  <br>
+  <a href="https://datos.gob.es/es/catalogo/ea0010587-defunciones-semanales-acumuladas-y-variacion-interanual-del-acumulado-total-nacional-y-ccaa-2000-2022-edes-identificador-api-35177" target="_blank">
+    <b>Defunciones</b>
+    </a>
+
+  
+</div>
+
+<h2> Objetivo </h2>
+<div class="div-1"> 
+El objetivo que se aborda en este trabajo es el análisis del paro en España. Se pretende analizar su evolución en el registro histórico, así como las variaciones del paro atendiendo a distintos grupos de edad, distintas regiones, tasas de paro según los géneros etcétera. <br>  
+
+La fuentes de los datos empleados en este estudio provienen de las distintas encuestas de ocupación realizadas por el INE "Instituto Nacional de Estadística" y aunque se toman como datos válidos veremos como se discutirá en este informe este mismo hecho. 
+
+ 
+</div>
+<br>
+<br>
+<h2>Introducción </h2>
+  <div class="div-1"> 
+    <p>
+    El paro se define en la RAE como <b>"Situación de la persona que está en condiciones de trabajar, pero no tiene empleo o lo ha perdido." </b> Es por ello que el paro puede variar depende como se defina que es una persona en condiciones de trabajar.  
+
+    El paro se va a poder presentar en términos absolutos, millones de habitantes en un área geográfica concreta, en este caso España, o en términos relativos, es decir el tanto por ciento sobre una base. Habitualmente esta base es la población activa.  
+
+  </p> 
+
+  <p>  
+
+    Trabajar con valores absolutos es una posibilidad, pero puede inducir a confusión si comparamos regiones con poblaciones tamaños diferentes. 100.000 parados en Madrid suponen el doble de la población activa en Huesca y sin embargo tener 20 mil parados en esta localidad sería una circunstancia mucho más preocupante que la anterior. Es por ello que para hacer análisis comparativos entre regiones, sexos o grupos de edad se van a emplear los valores relativos obtenidos de las distintas encuestas de población activa que publica de forma trimestral el INE 
+
+    </p>
+    <br>
+  <h2>Análisis</h2>
+  <iframe title="Evolución del paro en España " aria-label="Interactive line chart" id="datawrapper-chart-9zCln" src="https://datawrapper.dwcdn.net/9zCln/2/" scrolling="no" frameborder="0" style="width: 100%; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+  </script>
+
+  <p> En este gráfico podemos ver la evolución trimestral del paro España desde el 2002 hasta el último trimestre del año 2022. Teniendo en cuenta que entre 2008 y 2013 hubo una crisis importante en España, ver una subida del paro hasta 2014 parece en consonancia con la situación macroeconómica del momento. No obstante, nos llama la atención que a raíz de la pandemia de Covid-19 solo se vea una subida del paro en el último trimestre de 2019 y parte de 2020.  
+  </p> 
+
+  <p> 
+  En esta época eran habituales las noticias de empresas en ERTE, de cierre de empresas, deslocalizaciones etcétera, sin embargo el gráfico nos muestra una caída significativa del paro hasta mínimos de hace diez años. Nos preguntamos si esto se debe a una exageración de la situación vivida por parte de los medios de comunicación o si se esconde algo más. Con el fin de averiguar de averiguarlo se ha decidido comparar el paro con otra variable, las horas totales trabajadas.  
+  </p> 
+  <p> Se elige este gráfico al representarse una varibale que evoluciona con el tiempo y donde lo primordial no es tanto su valor como la propia evolución</p>
+
+  <h4>Discutiendo los datos del paro</h4> 
+  <p> 
+  El INE nos ofrece en una nueva encuesta las horas de trabajo totales en España, esta encuesta se hace no desde el lado del trabajador, sino desde el de la empresa y hace referencia a las horas de trabajo semanal promedio resultado de acumular todas las jornadas de todas las personas que están trabajando. Entiéndase tanto trabajadores por cuenta propia como ajena.  
+  </p> 
+
+
+  <br>
+  <iframe width="834" height="515" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vROVnkcWGNmO8MLIfhVKTVcTEWpEMfggeopYFQ8kcSuJuZWM2ZUYmR8pEbqrik8fg/pubchart?oid=425565180&amp;format=interactive"></iframe>
+
+  <p>El objetivo de este gráfico es la comparación de las variaciones de la tasa de paro nacional respecto a las variaciones de las horas de trabajo efectivas semanales. Se va a emplear una escala logarítmica para apreciar mejor estos incrementos</p> 
+
+  <p>Se puede apreciar cómo hasta 2019 existe una correlación entre el paro y las horas de trabajo, de manera que cuando las horas de trabajo van cayendo el paro aumenta. En este sentido podemos ver como en el tercer trimestre de 2013 se tienen aproximadamente medio millón de horas trabajadas semanales, lo que se corresponde con los máximos de paro de la serie histórica, 23,3%. Sin embargo, esto cambia con la llegada de la pandemia.    </p> 
+  
+  <p>Resulta imposible no fijarse como en el segundo trimestre de 2020 se produce una caída a mínimos históricos de las horas semanales de trabajo, pero el paro llega al 14,55%, muy lejos de los máximos alcanzados en 2013. <br> 
+  
+  En segundo lugar, vemos como en el 2021 y 2022 se produce un descenso del paro sin tener un aumento notable de las horas semanales trabajadas, este descenso llega a alcanzar los mínimos desde el 2010. </p> 
+
+  <p> La explicación a este fenómeno se podría encontrar en la figura del fijo-discontinuo, figura laboral introducida en la pandemia que hace que los trabajadores discontinuos pasen a ser contabilizados como trabajadores fijos durante todo el año y no solo en el periodo en el que trabajan. Por ejemplo, un camarero que trabajase en temporada alta, segundo y tercer trimestre, ahora pasaría a considerarse no parado también en el primer y cuarto trimestre. Esta hipótesis podría explicar la des-correlación entre las horas de trabajo efectivas semanales y la variación de la tasa del paro desde el 2019 hasta la actualidad.   
+  </p> 
+  <p> 
+
+  Para poder fortalecer esta hipótesis podríamos ver si existe alguna anomalía en el número de defunciones. Para ello y empleando las distintas encuestas del INE sobre la evolución demográfica de España podemos realizar la siguiente gráfica. 
+  
+  </p> 
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRcEa1ZY36zhrHcidd8vkb2Vr8DP_brgSAo4AyxnyYR91FQOAW4q90mHxI4gQvYTw/pubchart?oid=36166475&amp;format=interactive"></iframe>
+
+<p> Vamos a emplear un gráfico de barras para comparar la magnitud de un suceso que se produce año tras año. Se elige este frente a un gráfico de línea por que lo que queremos resaltar es la magnitud del dato y no tanto su evolución</p>
+
+
+<p>Aunque es verdad que hay un aumento de las defunciones en 2020 y 2021 que bien podría ser causa de la covid19, aunque requeriría un estudio a parte, no vemos unas variaciones significativas capaces de justificar a traves de un fenómeno demográfico natural la falta de correlación observada en el gráfico anterior.</p>
+
+<iframe title="Paro  porcentual por grupo de edad" aria-label="Split Bars" id="datawrapper-chart-iny10" src="https://datawrapper.dwcdn.net/iny10/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="230" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+<p>En este gráfico se ha representado el paro promedio de los últimos años por grupos de edad. Podemos ver como existe un paro mayor entre los menores de 25, aunque una parte pueda deberse a que entre los 16 y los 22 años hay una mayoría de estudiantes, no deja de ser un porcentaje significativo.  
+<br> 
+Para la población de más de 25 años el paro se ha situado entre el 11 y el 14% aumentando durante la pandemia y habiendo tenido un descenso significativo en el año 2022.   
+</p> 
+<p> Para poder analizar el paro en las distintas regiones, según el género, los grupos de edad y el año se ha elaborado un pequeño dashboard con un mapa interactivo en el que seleccionar la región, el año el grupo poblacional y el sexo. Alado se puede ver la evolución trimestral del paro.  
+</p> 
+<h2> Mapa interactivo sobre el paro</h2>
+<p> Se emplea este pequeño dashboard para poder analizar los datos de una forma dinámica</p>
+<iframe width="900" height="675" src="https://lookerstudio.google.com/embed/reporting/86a47f32-44bf-4b4b-92ff-4a368956e4cc/page/Qz4MD" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<p style="font-style: italic"> En caso de seleccionar más de un campo lo que se obtendrá serán los valores promedios 
+<h2>Herramientas y metodología</h2>
+
+Las herramientas empleadas han sido Google Sheets, Datawrapped y LookerStudio para la elaboración del mapa interactivo. 
+<br>
+La elección de la herramienta de Datawrapped y la inspiración para trabajar con .css para establecer estilos de fuentes se ha tomado de uno de los ejemplos del curso, si bien el código y la implementación es original. 
+<br>
+La obtención de los datos se ha hecho directamente del INE con la ayuda de la herramienta de pcAxis para la modificación de la estructura y disposición de los datos. 
+<br>
+Se han realizado distintas modificaciones de los campos para ajustarlos a las necesidades, ya que por ejemplo las Comunidades Autónomas españolas  vienen con un código númerico delante, 01Madrid y las fechas trimestrales vienen dadas como el año, seguido de una T y el trimestre, 2000T1 
+</div>
